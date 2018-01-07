@@ -125,6 +125,8 @@ public class MainActivity extends ActionBarActivity {
             AdView mAdView = (AdView) rootView.findViewById(R.id.adView);
             AdRequest adRequest = new AdRequest.Builder().build();
             mAdView.loadAd(adRequest);
+
+
             final String[] Syllabus = {
                     "B.tech","M.tech"
             };
@@ -160,8 +162,6 @@ public class MainActivity extends ActionBarActivity {
                         else {
                             //Toast.makeText(getActivity(), "Coming Soon", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(getActivity(), Main2Activity.class);
-
-
                             startActivity(intent);
                         }
                     }
